@@ -4,13 +4,11 @@
     --var-col-b: #e8e8e825;
     --var-col-c: #1e5272;
     --var-col-d: rgb(175, 175, 175);
-
     --var-linebreak: 1px solid white;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     background:var(--var-col-a) ;
@@ -28,7 +26,6 @@ i {
 
 
 #content-container {
-    /* border: 5px solid black; */
     margin: auto;
     max-width: 100vw;
     display: flex;
@@ -39,10 +36,8 @@ i {
 }
 
 #nav {
-    /* background: var(--var-col-a); */
     height: 50px;
     max-width: 120rem;
-    /* border: 2px solid yellow; */
     display: flex;
     gap: .1rem;
     border-bottom: var(--var-linebreak);
@@ -66,27 +61,6 @@ i {
     font-size: .9rem;
 }
 
-/* #nav :nth-child(1) {
-    width: 10rem;
-}
-
-#nav :nth-child(2) {
-    width: 60rem;
-    cursor: auto;
-}
-
-#nav :nth-child(3) {
-    width: 10rem;
-}
-
-#nav :nth-child(4) {
-    width: 8rem;
-}
-
-#nav :nth-child(5) {
-    width: 35rem;
-} */
-
 #nav-browse {
     width: 10rem;
 }
@@ -102,18 +76,14 @@ i {
     width: 90rem;
 }
 
-
-
 .slideshow-container {
     display: flex;
     justify-content: center;
     max-width: 100vw;
     user-select: none;
-    /* border: 5px solid green; */
 }
 
 .slideshow-buttons {
-    /* border: 1px solid purple; */
     position: absolute;
     margin-top: 410px;
     max-width: 1rem;
@@ -152,16 +122,13 @@ i {
     background: var(--var-col-b);
     display: flex;
     justify-content: center;
-    /* border: 3px solid rebeccapurple; */
     user-select: none;
     border-bottom: var(--var-linebreak);
     align-items: baseline;
     margin-top: 3rem;
 }
 
-
 #partners p {
-    /* border: 2px solid purple; */
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -169,7 +136,6 @@ i {
 #partners i {
     cursor: pointer;
     background: none;
-    /* border: 1px solid yellow; */
     text-align: center;
     padding: 1rem;
     height: 1rem;
@@ -191,20 +157,16 @@ i {
 }
 
 .slides {
-    /* border: 10px solid purple; */
     width: 50em;
 }
 
 .slides img {
     object-fit: cover;
     position: absolute;
-    /* border: 2px solid yellow; */
     height: 400px;
     width: 50rem;
-    
     cursor: pointer;
 }
-
 
 .slides p {
     z-index: 1;
@@ -212,12 +174,10 @@ i {
     font-size: 32px;
     font-weight: 700;
     background-color: var(--var-col-a-o);
-    /* border: 1px solid red; */
     padding-top: .5em;
     padding-right: 1em;
     border-top-right-radius: 2em;
     transition: all .2s ease-out;
-
 }
 
 .slides:hover p {
@@ -236,7 +196,6 @@ i {
     padding: 2.5em;
     border-bottom: 3px solid white;
     max-width: 130rem;
-    /* border: 1px solid red; */
 }
 
 .card-title {
@@ -262,10 +221,6 @@ i {
     transition: all .1s ease;
 }
 
-.card-content:hover .card-text {
-    /* padding-top: 1rem; */
-}
-
 .card-content:hover img {
     height: 65%;
     transition: all .3s ease;
@@ -288,7 +243,6 @@ i {
     display: flex;
     flex-direction: column;
     transition: all .3s ease;
-    /* border: 1px solid yellow; */
 }
 
 .card-text p {
@@ -314,10 +268,8 @@ i {
 }
 
 footer {
-    /* border: 1px solid red; */
     margin: auto;
 }
-
 
 footer p {
     font-size: 2rem;
@@ -336,10 +288,7 @@ footer li {
     cursor: context-menu;
 }
 
-
-
 .dropdown-menu {
-    /* border: 1px solid red; */
     display: inline-block;
 }
 
@@ -347,7 +296,6 @@ footer li {
     display: none;
     position: absolute;
     padding-right: 2rem;
-    /* margin-left: 1rem; */
     top: 3em;
     max-width: 12rem;
     height: 25rem;
@@ -357,7 +305,6 @@ footer li {
     border-top: 1px solid var(--var-col-b);
     border-bottom: 1px solid white;
 }
-
 
 .dropdown-button:active + .dropdown-content {
     transform: translateX(-10rem);
@@ -375,8 +322,6 @@ footer li {
     text-decoration: underline;
     cursor: auto;
 }
-
-
 
 .show {
     display: block;
@@ -437,12 +382,6 @@ footer li {
     .slides {
         max-width: 15rem;
     }
-    /* .footer-content {
-        font-size: .7rem;
-        gap: 0px;
-        padding-right: 2rem;
-        font-size: .7rem;
-    } */
 
     * {
         font-size: 1rem;
@@ -463,6 +402,4 @@ footer li {
     #nav-box-a, #nav-box-b {
         display: none;
     }
-
-
 }

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e1c7adb145.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Shopping Site</title>
+    </head>
+<body>
+<div id="main-container">
+
+<div id="content-container">
+    <div id="nav">
+        
+        <div class="dropdown-menu">
+            <p onclick="dropStart()" class="dropdown-button" id="nav-browse">
+                <i class="fa-solid fa-magnifying-glass"></i>Browse</p>
+
+            <div class="dropdown-content" id="my-dropdown">
+                <ul>
+                    <li class="dropdown-title">Technology</li>
+                    <li>Audio</li>
+                    <li>Gaming</li>
+                    <li>Phones</li>
+                </ul>
+                <ul>
+                    <li class="dropdown-title">Recreation</li>
+                    <li>SchoolStuff</li>
+                    <li>Markers</li>
+                </ul>
+                <ul>
+                    <li class="dropdown-title">Living</li>
+                    <li>Indoor</li>
+                    <li>Outdoor</li>
+                    <li>Cars</li>
+                </ul>
+            </div>
+        </div>
+
+        <p id="nav-box-a"></p>
+        <p id="nav-wishlist">
+            <i class="fa-solid fa-heart"></i>
+            Wishlist
+        </p>
+        <p id="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </p>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="image-one">
+                <img src="https://images.unsplash.com/photo-1625662171891-9a3348f961f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+                <p class="image-text">New in Stock</p>
+            </div>
+        </div>
+        <div class="slides">
+            <div class="image-two">
+                <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="">
+                <p class="image-text">Arts & Hobbies Sale</p>
+            </div>
+        </div>
+        <div class="slides">
+            <div class="image-three">
+                <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+                <p class="image-text">Upcoming Products</p>
+            </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <div class="slideshow-buttons">
+            <a class="prev" onclick="slideNext(-1)">&#10094;</a>
+            <a class="next" onclick="slideNext(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+
+    <div id="partners-container">
+        <div id="partners">
+            <p>Partners:</p>
+            <i class="fa-solid fa-bolt fa-lg fa-fw"></i>
+            <i class="fa-brands fa-canadian-maple-leaf fa-lg fa-fw"></i>
+            <i class="fa-brands fa-centos fa-lg fa-fw"></i>
+            <i class="fa-brands fa-chrome fa-lg fa-fw"></i>
+        </div>
+    </div>
+
+    
+    <h1 class="card-title">Recently Refurbished</h1>
+    <div class="card-container">
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+            <div class="card-text">
+                <h2>Wired Controllers</h2>
+                <p>from £34.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1559743340-e9baff3f1052?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80 alt="">
+            <div class="card-text">
+                <h2>Markers</h2>
+                <p>from £2.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1543878636-41918458581d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+            <div class="card-text">
+                <h2>Kids Toys</h2>
+                <p>from £7.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1485116480018-f1aa5e621bbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+            <div class="card-text">
+                <h2>Outdoor</h2>
+                <p>from £1.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1595348020949-87cdfbb44174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+            <div class="card-text">
+                <h2>Home Fitness</h2>
+                <p>from £19.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+            <div class="card-text">
+                <h2>Headwear</h2>
+                <p>from £11.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1630527152680-500b5453fb04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1346&q=80" alt="">
+            <div class="card-text">
+                <h2>Kitchen Utensils</h2>
+                <p>from £4.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1608156639585-b3a032ef9689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80" alt="">
+            <div class="card-text">
+                <h2>Audio</h2>
+                <p>from £7.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1623393945964-8f5d573f9358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="">
+            <div class="card-text">
+                <h2>Phone Accessories</h2>
+                <p>from £13.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" alt="">
+            <div class="card-text">
+                <h2>Footwear</h2>
+                <p>from £24.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1602848596140-33c2b48c6ade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1156&q=80" alt="">
+            <div class="card-text">
+                <h2>Vinyl Records</h2>
+                <p>from £43.99</p>
+            </div>
+        </div>
+        <div class="card-content">
+            <img src="https://images.unsplash.com/photo-1621607505145-a022ec52de64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+            <div class="card-text">
+                <h2>Grooming</h2>
+                <p>from £21.99</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li class="footer-title">Buy</li>
+                <li>Refund Policy</li>
+                <li>Payments</li>
+                <li>Charity Work</li>
+            </ul>
+            <ul>
+                <li class="footer-title">Sell</li>
+                <li>Partnerships</li>
+                <li>Selling Fees</li>
+                <li>Selling Terms</li>
+            </ul>
+            <ul>
+                <li class="footer-title">About Us</li>
+                <li>Legal</li>
+                <li>Sponsors</li>
+                <li>Advertising</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+</div>
+
+</body>
+</html>
